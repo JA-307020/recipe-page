@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.4rem;
+  color: hsl(30, 10%, 34%);
+  display: flex;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  margin: auto;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.banner {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  margin-top: 2rem;
+  padding-bottom: 1.3rem;
+  color: hsl(360, 0%, 0%);
+  font-family: "Young Serif";
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+}
+
+.description {
+  padding-bottom: 1.4rem;
+}
+
+aside {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 1em;
+  padding: 1.6rem 0 1.6rem 1.5rem;
+}
+
+.prep {
+  color: hsl(332, 51%, 32%);
+  padding-bottom: 0.6rem;
+}
+
+.steps {
+  font-weight: 600;
+}
+
+.prep-list {
+  list-style-position: inside;
+  margin-left: 0.4rem;
+  line-height: 1.8rem;
+}
+
+.prep-list > li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.sections {
+  padding-top: 1.5rem;
+  padding-bottom: 0.8rem;
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif";
+  letter-spacing: 0.05rem;
+}
+
+.section-list {
+  list-style-position: outside;
+  margin-left: 1.3rem;
+  line-height: 1.5rem;
+}
+
+.section-list li {
+  padding-left: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.section-list >li::marker, td {
+  font-weight: 600;
+  color:hsl(14, 45%, 36%);
+}
+
+.detailed-steps > li {
+  line-height: 1.4rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0.8rem;
+}
+
+.detailed-steps >li:last-of-type {
+  padding-bottom: 0.2rem;
+}
+
+.divider {
+  border: 1px solid hsl(30, 18%, 87%);
+  margin-top: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+table {
+  padding-top: 0.8rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+caption {
+  text-align: left;
+}
+
+th, td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 0.5rem 0 0.5rem 3rem;
+  text-align: left;
+}
+
+th {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 375px) {
+  .banner {
+    transform: scale(1.2);
+  }
+
+  .title {
+    padding-top: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 376px) {
+  body {
+    background-color: hsl(30, 54%, 90%);
+  }
+
+  .container {
+    max-width: 85vw;
+    border-radius: 1rem;
+    margin: 5vh auto;
+    padding-top: 2rem;
+  }
+
+  .banner {
+    border-radius: 1rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    max-width: 55vw;
+  }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
